@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: node-csv-api
-          image: pmoits/node-csv-api:latest
+          image: wagnerduarte/pockubernetes:latest
           ports:
             - containerPort: 8080
