@@ -25,7 +25,7 @@ app.post("/data", (req, res) => {
   const csvArray = csvreq.split('\n');
   const csvline = '\n' + csvArray[1];
   fs.appendFile(file, csvline, (err) => {
-    if (err) console.error('Couldn\'t append the data');
+    if (err) console.error('Não foi possivel incluir a linha');
     res.send('{ "message":"Linha incluida ao CSV" }')
   });
 });
